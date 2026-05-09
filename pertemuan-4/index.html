@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Emil Maulana - Pertemuan 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="judul">Emil Maulana</h1>
+            <p>Pertemuan 4 - Dasar JavaScript & Logika Kondisional</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../pertemuan-1/index.html">Pertemuan 1</a></li>
+                <li><a href="../pertemuan-2/index.html">Pertemuan 2</a></li>
+                <li><a href="../pertemuan-3/index.html">Pertemuan 3</a></li>
+                <li><a href="index.html">Pertemuan 4</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            <div class="form-card">
+                <h2>Cek Indeks Nilai Huruf</h2>
+                <p>Silakan masukkan data akademik Anda untuk menghitung indeks nilai secara otomatis.</p>
+                
+                <div class="form-group">
+                    <label for="npm">Nomor Pokok Mahasiswa (NPM)</label>
+                    <input type="text" id="npm" name="npm" placeholder="Contoh: 2110631170xxx">
+                </div>
+
+                <div class="form-group">
+                    <label for="mk">Mata Kuliah</label>
+                    <input type="text" id="mk" name="mk" placeholder="Contoh: Pemrograman Berbasis Web">
+                </div>
+
+                <div class="form-group">
+                    <label for="nilai">Nilai Angka (0-100)</label>
+                    <input type="number" id="nilai" name="nilai" placeholder="Masukkan nilai angka">
+                </div>
+
+                <button class="btn" onclick="ubahHuruf()">Hitung Nilai Huruf</button>
+
+                <hr class="form-divider">
+
+                <div id="result-container" class="result-box" style="display: none;">
+                    <h3>Hasil Perhitungan:</h3>
+                    <div class="result-details">
+                        <p>NPM: <span id="res-npm"></span></p>
+                        <p>Mata Kuliah: <span id="res-mk"></span></p>
+                        <p class="grade-display">Grade Anda: <span id="hasil"></span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h2>Navigasi Tugas</h2>
+                <div class="sidebar-content">
+                    <p>Halaman ini mempraktekkan penggunaan JavaScript untuk memanipulasi DOM dan logika percabangan.</p>
+                </div>
+                <hr>
+                <h2>Skala Penilaian</h2>
+                <ul class="grade-scale">
+                    <li><b>A</b> : >= 80</li>
+                    <li><b>B</b> : >= 70</li>
+                    <li><b>C</b> : >= 60</li>
+                    <li><b>D</b> : >= 50</li>
+                    <li><b>E</b> : < 50</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 <b>Emil Maulana</b>. All rights reserved. | Tugas Praktikum PBW Pertemuan 4</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
