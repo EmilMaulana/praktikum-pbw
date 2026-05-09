@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Emil Maulana - Pertemuan 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="judul">Emil Maulana</h1>
+            <p>Pertemuan 2 - Form Registrasi Dasar</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../pertemuan-1/index.html">Pertemuan 1</a></li>
+                <li><a href="index.html">Pertemuan 2</a></li>
+                <li><a href="../pertemuan-3/index.html">Pertemuan 3</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            <div class="form-card">
+                <h2>Registrasi Pengguna</h2>
+                <p>Silakan isi formulir pendaftaran di bawah ini untuk memulai.</p>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" name="name" placeholder="Nama lengkap Anda" id="nama" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="NickName">Nama Panggilan</label>
+                        <input type="text" name="NickName" id="NickName" placeholder="Nama panggilan" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="contoh@mail.com" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="Password" placeholder="Masukkan password" id="password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Jenis Kelamin</b></label>
+                        <div class="options-flex">
+                            <label class="radio-label"><input type="radio" name="gender" value="male" required> Laki-laki</label>
+                            <label class="radio-label"><input type="radio" name="gender" value="female"> Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Hobi</b></label>
+                        <div class="options-grid">
+                            <label><input type="checkbox" name="hobi[]" value="musik"> Musik</label>
+                            <label><input type="checkbox" name="hobi[]" value="olahraga"> Olahraga</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kota">Pilih Kota</label>
+                        <select id="kota" name="kota" required>
+                            <option value="" disabled selected>Pilih Domisili</option>
+                            <option value="jkt">Jakarta</option>
+                            <option value="sby">Surabaya</option>
+                            <option value="mlg">Malang</option>
+                            <option value="bdg">Bandung</option>
+                            <option value="krw">Karawang</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file">Foto Profil</label>
+                        <input type="file" name="file" accept=".png,.jpg,.jpeg" id="file">
+                    </div>
+
+                    <button type="submit" class="btn">Daftar Sekarang</button>
+                </form>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h2>Navigasi Tugas</h2>
+                <div class="sidebar-content">
+                    <p>Halaman ini adalah bagian dari rangkaian tugas Praktikum Pemrograman Berbasis Web.</p>
+                </div>
+                <hr>
+                <h2>Tentang Halaman</h2>
+                <p>Tugas pertemuan 2 ini berfokus pada pembuatan elemen formulir HTML dasar dan pemrosesan data input.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 <b>Emil Maulana</b>. All rights reserved. | Tugas Praktikum PBW Pertemuan 2</p>
+    </footer>
+</body>
+</html>

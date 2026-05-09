@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Emil Maulana - Pertemuan 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="judul">Emil Maulana</h1>
+            <p>Pertemuan 3 - Form & Layout Lanjutan</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../pertemuan-1/index.html">Pertemuan 1</a></li>
+                <li><a href="../pertemuan-2/index.html">Pertemuan 2</a></li>
+                <li><a href="index.html">Pertemuan 3</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            <div class="form-card">
+                <h2>Formulir Pendaftaran</h2>
+                <p>Silakan lengkapi formulir di bawah ini untuk bergabung dengan komunitas kami.</p>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Contoh: Emil Maulana">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="emilmaulana10@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pw">Password</label>
+                        <input type="password" id="pw" name="password" required placeholder="Masukkan password anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Jenis Kelamin</b></label>
+                        <div class="options-flex">
+                            <label class="radio-label"><input name="gender" type="radio" value="laki-laki" required> Laki-Laki</label>
+                            <label class="radio-label"><input name="gender" type="radio" value="perempuan"> Perempuan</label>
+                        </div>
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <div class="form-group">
+                        <label><b>Hobi</b></label>
+                        <div class="options-grid">
+                            <label><input type="checkbox" name="hobi[]" value="musik"> Musik</label>
+                            <label><input type="checkbox" name="hobi[]" value="olahraga"> Olahraga</label>
+                            <label><input type="checkbox" name="hobi[]" value="membaca"> Membaca</label>
+                        </div>
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <div class="form-group">
+                        <label for="kota">Pilih Kota Domisili</label>
+                        <select id="kota" name="kota" required>
+                            <option value="" disabled selected>-- Pilih Kota --</option>
+                            <option value="jkt">Jakarta</option>
+                            <option value="sby">Surabaya</option>
+                            <option value="mlg">Malang</option>
+                            <option value="bdg">Bandung</option>
+                            <option value="krw">Karawang</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="komentar">Pesan atau Catatan :</label>
+                        <textarea id="komentar" name="komentar" rows="4" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Kirim Sekarang</button>
+                </form>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h2>Profil Singkat</h2>
+                <div class="sidebar-content">
+                    <p>Nama: <b>Emil Maulana</b></p>
+                    <p>Status: Mahasiswa</p>
+                    <p>Fokus: Web Development</p>
+                </div>
+                <hr>
+                <h2>Informasi</h2>
+                <p>Halaman ini merupakan tugas praktikum ke-3 untuk mata kuliah Pemrograman Berbasis Web (PBW).</p>
+                <a href="#" class="sidebar-link">Pelajari Selengkapnya →</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 <b>Emil Maulana</b>. All rights reserved. | Tugas Praktikum PBW Pertemuan 3</p>
+    </footer>
+</body>
+</html>

@@ -1,1 +1,253 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Lamaran Kerja - Emil Maulana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --text-dark: #0f172a;
+            --text-light: #475569;
+            --bg-gray: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-gray);
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .paper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 60px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .header-info h1 {
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .header-info p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 3px solid var(--bg-gray);
+        }
+
+        .recipient-info {
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+
+        .recipient-info b {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .letter-content {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            color: var(--text-dark);
+            margin-bottom: 40px;
+        }
+
+        .letter-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .personal-data {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+
+        .personal-data th, .personal-data td {
+            padding: 8px 0;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .personal-data th {
+            width: 200px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .skills-section {
+            background: var(--bg-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .skills-section h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .skill-item::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .portfolio-link:hover {
+            background: var(--accent);
+        }
+
+        .signature {
+            margin-top: 60px;
+        }
+
+        .signature p {
+            margin-bottom: 80px;
+        }
+
+        .signature b {
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .paper { box-shadow: none; padding: 0; }
+            .portfolio-link { border: 1px solid #000; color: #000; background: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <div class="header">
+            <div class="header-info">
+                <h1>Emil Maulana</h1>
+                <p>S1 Ilmu Komputer • emilmaulana10@gmail.com • 0851-7698-3548</p>
+                <p>Ciamis, Jawa Barat</p>
+            </div>
+            <img src="emil.png" alt="Emil Maulana" class="profile-img">
+        </div>
+
+        <div class="recipient-info">
+            <p>Kepada Yth.</p>
+            <b>HRD PT Chandra Daya Investasi Tbk</b>
+            <p>Wisma Barito Pacific, Jl. Letjen S. Parman No.Kav. 62 - 63 1</p>
+            <p>Slipi, Kec. Palmerah, Kota Jakarta Barat, DKI Jakarta</p>
+        </div>
+
+        <div class="letter-content">
+            <p>Dengan Hormat,</p>
+            <p>Saya yang bertanda tangan di bawah ini:</p>
+
+            <table class="personal-data">
+                <tr>
+                    <th>Tempat, Tanggal Lahir</th>
+                    <td>Ciamis, 13 Oktober 2003</td>
+                </tr>
+                <tr>
+                    <th>Pendidikan Terakhir</th>
+                    <td>S1 Ilmu Komputer</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>emilmaulana10@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Telepon</th>
+                    <td>0851-7698-3548</td>
+                </tr>
+            </table>
+
+            <p>Bersama ini saya bermaksud mengajukan lamaran pekerjaan untuk posisi <b>Data Analyst</b> di PT Chandra Daya Investasi Tbk. Saya memiliki minat besar dalam pengolahan data dan telah mengembangkan berbagai keterampilan teknis yang relevan untuk mendukung pertumbuhan perusahaan Anda.</p>
+
+            <div class="skills-section">
+                <h3>Keahlian & Kompetensi</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Laravel & Web Development</div>
+                    <div class="skill-item">SQL Database Management</div>
+                    <div class="skill-item">Python & R Programming</div>
+                    <div class="skill-item">Data Visualization (Power BI)</div>
+                    <div class="skill-item">Statistik dan Matematika</div>
+                    <div class="skill-item">Data Wrangling (Pandas/Excel)</div>
+                </div>
+            </div>
+
+            <p>Sebagai bahan pertimbangan, saya juga telah melampirkan portofolio pengerjaan proyek-proyek saya sebelumnya yang dapat diakses melalui tautan berikut:</p>
+            <a href="https://emil-maulana.vercel.app/" target="_blank" class="portfolio-link">Lihat Portofolio Online</a>
+
+            <p>Demikian surat lamaran ini saya sampaikan. Saya sangat berharap dapat diberikan kesempatan untuk mengikuti tahapan wawancara agar dapat menjelaskan lebih lanjut mengenai potensi yang saya miliki. Atas perhatian Bapak/Ibu, saya ucapkan terima kasih.</p>
+        </div>
+
+        <div class="signature">
+            <p>Hormat saya,</p>
+            <b>Emil Maulana</b>
+        </div>
+    </div>
+</body>
+</html>
